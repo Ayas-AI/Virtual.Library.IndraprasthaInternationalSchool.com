@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+      <script src="https://kit.fontawesome.com/e9aff2d765.js" crossorigin="anonymous"></script>
+    <title>Books</title>
+    <style>
+    *{
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+
+    }
+    .search-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: #2f3640;
+      height: 40px;
+      border-radius: 40px;
+    }
+    .search-box:hover > .search-txt{
+      width:240px;
+      padding: 0 6px;
+    }
+    .search-box:hover > .search-btn{
+      background: white;
+    }
+    .search-btn{
+        color: #e84118;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #2f3640;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+    }
+    .search-txt{
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0;
+      color: white;
+      font-size: 16px;
+      transition: 0.4s;
+      line-height: 40px;
+      width: 0px;
+
+    }
+    .loader{
+      position: fixed;
+      z-index: 99;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background: #EFF2F3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .loader > img{
+      width: 100px;
+    }
+    .loader.hidden{
+      animation: fadeOut 3s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes fadeOut {
+      100%{
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    h1{
+      font-size: 50px;
+      color: white;
+    }
+    body {
+        font-family: montserrat, sans-serif;
+        background-image: url("https://i.postimg.cc/yNtMpgvf/tumblr-onfb2h2y-Ef1s14nrdo1-500.gif");
+        background-size:100% 100vh;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;}
+
+    nav{
+      background: #0082e6;
+      height: 80px;
+      width: 100%;
+    }
+    label.logo{
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+    }
+    nav ul{
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li{
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    a.active,a:hover{
+      background: #1b9bff;
+      transition: .5s;
+      }
+      .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor:pointer;
+        display: none;
+      }
+      #check{
+        display: none;
+    }
+    @media (max-width: 952px){
+      label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+      }
+      nav ul li a{
+        font-size: 16px;
+      }
+    }
+    @media (max-width: 868px){
+      .checkbtn{
+        display: block;
+      }
+      ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        }
+        nav ul li{
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+          }
+          nav ul li a{
+            font-size: 20px;
+          }
+          a:hover,a.active{
+            background: none;
+            color: #0082e6;
+          }
+          #check:checked ~ ul{
+            left: 0;
+          }
+    }
+    section{
+
+    }
+
+    </style>
+</head>
+<body>
+
+  </div>
+  <div class="loader">
+    <img src="https://i.postimg.cc/02Lnjs6m/Dual-Ring-1-1s-203px.gif" alt="Loading....."/>
+  </div>
+
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Virtual Library</label>
+    <ul>
+      <li><a  href="C:\Users\ayask\OneDrive\Virtual Library Prototype\Main Home Page\HTML\Main.html">Home</a></li>
+            <li><a class="active"href="C:\Users\ayask\OneDrive\Virtual Library Prototype\Books\HTML\Books.html">Books</a></li>
+              <li><a href="#">About Version</a></li>
+    </ul>
+  </nav>
+
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1YBwVr-NTOaKiHTAfJRVhYZC5EhHNS-pd/view?usp=sharing" target="_blank">Wimpy Kid Part-1</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1npTDDiOJFbMJgaPlG-LZwp7tfzEBPbie/view?usp=sharing" target="_blank">Wimpy Kid Part-2</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1XGeps4Bgs-91TQJWZjpioXcwXiaL4OnT/view?usp=sharing" target="_blank">Wimpy Kid Part-3</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1x01DI7_-lAL4f6iUndcLmxCqFsZa5d3e/view?usp=sharing" target="_blank">Wimpy Kid Part-4</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1BuyR-aWYEtlu1WUpoSBnjrW10HyMGtCm/view?usp=sharing" target="_blank">Wimpy Kid Part-5</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1Am7oVJia7d3iKye5qq860p0puVy393Xp/view?usp=sharing" target="_blank">Wimpy Kid Part-6</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1PcpKiM6cHM9MnizQu4cyF53nnYngLao_/view?usp=sharing" target="_blank">Wimpy Kid Part-7</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1EL5ZxcV3L45SR04obomkQsZEiGZnowNh/view?usp=sharing" target="_blank">Wimpy Kid Part-8</a>
+<br>
+<br>
+<a href="https://drive.google.com/file/d/1U9mScxADtlc9ye19vmoNs3hCqLmSYYr3/view?usp=sharing" target="_blank">Wimpy Kid Part-9</a>
+
+</div>
+<script type="text/javascript">
+window.addEventListener("load", function (){
+const loader = document.querySelector(".loader");
+loader.className += " hidden"; //class "loader hidden"
+});
+
+</script>
+</body>
+</html>
